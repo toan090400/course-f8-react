@@ -1,8 +1,17 @@
-const Todo = ({ state, setJob, handlerAddJob, handlerDeleteJob, dispatch }) => {
+const Todo = ({
+  state,
+  setJob,
+  handlerAddJob,
+  inputRef,
+  handlerDeleteJob,
+  dispatch,
+}) => {
   return (
     <div className="App">
       <h3>Todo</h3>
       <input
+        // vị trí thiết lập useRef
+        ref={inputRef}
         type="text"
         placeholder="Enter Todo..."
         value={state.input}
