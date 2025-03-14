@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Image from "./asset/useEffect/image";
+import Todo from "./asset/useReducer/todo";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* thực hành sử dụng useEffect hiển thị hình ảnh */}
+      <Image />
+      {/* thực hành chức nằng useReducer với ứng dụng todo list */}
+      <Todo />
+    </>
   );
 }
 
